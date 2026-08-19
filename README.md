@@ -1,5 +1,8 @@
 # starknet-remote-signer
 
+[![CI](https://github.com/NasipTolobai/starknet-remote-signer/actions/workflows/ci.yml/badge.svg)](https://github.com/NasipTolobai/starknet-remote-signer/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
+
 A [`starknet.js`](https://github.com/starknet-io/starknet.js) `Signer` whose private key never exists in your process.
 
 The key stays in a TEE, an HSM, or an MPC network. This package handles the part
