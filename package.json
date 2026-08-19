@@ -1,0 +1,54 @@
+{
+  "name": "starknet-remote-signer",
+  "version": "0.1.0",
+  "description": "A starknet.js Signer whose private key lives in a TEE, HSM or MPC service. Produces Argent v0.4 signatures that work for counterfactual deployment as well as ordinary calls. Includes a Privy adapter.",
+  "keywords": [
+    "starknet",
+    "starknet.js",
+    "signer",
+    "argent",
+    "account-abstraction",
+    "mpc",
+    "tee",
+    "privy",
+    "seedless",
+    "wallet"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "!src/**/__tests__/**",
+    "README.md",
+    "LICENSE",
+    "SECURITY.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run test && npm run build"
+  },
+  "peerDependencies": {
+    "starknet": "^9.0.0"
+  },
+  "devDependencies": {
+    "starknet": "^9.4.2",
+    "typescript": "^5.7.0",
+    "vitest": "^3.2.4"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "sideEffects": false
+}
