@@ -56,7 +56,7 @@ afterwards.
 ```ts
 import { Account, RpcProvider } from 'starknet';
 import { PrivyStarknetSigner, computeArgentV04Address } from 'starknet-remote-signer';
-import { useSignRawHash } from '@privy-io/react-auth';
+import { useSignRawHash } from '@privy-io/react-auth/extended-chains';
 
 const { signRawHash } = useSignRawHash();
 

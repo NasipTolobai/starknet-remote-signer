@@ -15,6 +15,15 @@
     "wallet"
   ],
   "license": "MIT",
+  "author": "Twin Wallet",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NasipTolobai/starknet-remote-signer.git"
+  },
+  "homepage": "https://github.com/NasipTolobai/starknet-remote-signer#readme",
+  "bugs": {
+    "url": "https://github.com/NasipTolobai/starknet-remote-signer/issues"
+  },
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
